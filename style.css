@@ -1,0 +1,84 @@
+.body{
+    margin: 0 !important;
+}
+.contain{
+    margin: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(211, 213, 241);;
+}
+.contain h1{
+    color: rgb(51, 59, 163) ;
+}
+#sform{
+    background-color: rgb(167, 170, 224);
+    width: 50%;
+    margin:0 auto;
+    align-content: center;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+#sform label{
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+#sform div{
+    margin: 20px;
+}
+.fcenter{
+    text-align: center;
+}
+button{
+    background-color: green;
+    border: none;
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+table , td , th{
+    border: none;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table{
+    margin-top: 20px;
+}
+input{
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    margin-left: 20px;
+}
+.thead{
+    background-color:rgb(34, 60, 226) ;
+    color: white;
+}
+#tbody{
+    background-color: rgb(167, 170, 224);
+}
+select{
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+span{
+    color: red;
+}
+#showmsg{
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 5px orange;
+    padding-left: 60px;
+}
+.showmsg{
+    width: 90%;
+    text-align: center;
+}
