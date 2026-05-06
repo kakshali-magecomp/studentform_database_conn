@@ -14,7 +14,7 @@
 }
 #sform{
     background-color: rgb(167, 170, 224);
-    width: 50%;
+    width: 62%;
     margin:0 auto;
     align-content: center;
     border-radius: 5px;
@@ -56,10 +56,7 @@ input{
     border: none;
     margin-left: 20px;
 }
-.thead{
-    background-color:rgb(34, 60, 226) ;
-    color: white;
-}
+
 #tbody{
     background-color: rgb(167, 170, 224);
 }
@@ -81,4 +78,30 @@ span{
 .showmsg{
     width: 90%;
     text-align: center;
+}
+.tablec,th,td{
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(133, 137, 210);
+    color: white;
+}
+.tablecontain{
+    margin-top: 0px;
+    background-color: rgb(211, 213, 241);
+    margin-bottom: 20px;
+    height: auto;
+}
+.formcontain{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.tablec
+{
+    width: 70%;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
 }

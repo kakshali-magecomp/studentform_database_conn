@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="contain">
         <h1>Student Profile</h1>
-        
+        <div class="formcontain">
             <form id="sform" action="" method="POST">
                 <div>
                 <label>Student Full Name</label>
@@ -176,7 +176,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
             </form>
-      
+      <div>
+    </div>
+    <div class="tablecontain">
+        <table class="tablec" align="center">
+            <tbody id="tbody">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>        
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Hobbies</th>
+                <th>Skill Level</th>
+                <th>Terms</th>
+                <th>Delete</th>
+
+            </tr>
+            <?php
+            $sql = "SELECT * FROM students";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["name"]. "</td><td>" . $row["email"]. "</td><td>" . $row["age"]. "</td><td>" . $row["gender"]. "</td><td>" . $row["course"]. "</td><td>" . $row["hobbies"]. "</td><td>" . $row["skill"]. "</td><td>" . $row["terms"]. "</td><td><a href='Delete.php?id=" . $row["id"] . "'>Delete</a></td></tr>";
+                }
+            } else {
+                echo "<tr><td colspan='8'>No students found</td></tr>";
+            }
+            $conn->close();
+            ?>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
